@@ -18,3 +18,11 @@ erl_crash.dump
 
 # Also ignore archive artifacts (built via "mix archive.build").
 *.ez
+
+# Ignore submodule directory
+*.github.io
+
+config/prod.exs
+
+# Thanks Apple
+.DS_Store
