@@ -17,6 +17,10 @@ defmodule Gblex do
     |> File.write!(html)
   end
 
+  def new_entry(name) do
+    File.write!("#{entries_dir()}/#{name}", "")
+  end
+
   def build(build_dir) do
     if !File.exists?(build_dir) do
       File.mkdir!(build_dir)
