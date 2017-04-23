@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= blog_title %></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 class="heading"><%= blog_title %></h1>
+        <%= body %>
+    </body>
+</html>
