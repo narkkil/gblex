@@ -4,6 +4,7 @@ defmodule Gblex do
   """
 
   def entries_dir, do: "entries"
+  def template_file, do: "lib/templates/template.html.eex"
 
   def render({entry_name, markdown}) when is_binary(markdown) do
     {entry_name, Earmark.as_html!(markdown)}
