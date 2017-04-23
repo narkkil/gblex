@@ -1,0 +1,6 @@
+<ul>
+    <%= for {date, title, slug} <- entries do %>
+    <li>
+        <%= date %>: <a href="<%= slug %>.html"> <%= title %> </a>
+    </li>
+    <% end %>
