@@ -31,3 +31,12 @@ pre {
     -moz-font-smoothing: grayscale;
     -webkit-font-smoothing: initial;
 }
+a:link {
+    text-decoration: none;
+    color:indianred;
+}
+
+a:visited {
+    text-decoration: none;
+    color:indianred;
+}
