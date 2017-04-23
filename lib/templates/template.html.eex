@@ -10,6 +10,7 @@
         <h1 class="heading">
             <a href="index.html"><%= blog_title %></a>
         </h1>
+        <p class="date"><%= entry_date %></p>
         <%= body %>
     </body>
 </html>

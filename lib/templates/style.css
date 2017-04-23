@@ -40,3 +40,11 @@ a:visited {
     text-decoration: none;
     color:indianred;
 }
+img {
+    max-width: 45em;
+}
+p.date {
+    float: right;
+    color: darkgrey;
+    font-style: italic;
+}
