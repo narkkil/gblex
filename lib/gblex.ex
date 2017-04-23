@@ -10,7 +10,7 @@ defmodule Gblex do
     {entry_name, Earmark.as_html!(markdown)}
   end
 
-  @@doc """
+  @doc """
     Writes a given entry tuple into the configured Github Pages directory.
   """
   def write_entry({name, html}) do
