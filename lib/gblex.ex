@@ -4,7 +4,6 @@ defmodule Gblex do
   """
 
   def entries_dir, do: "entries"
-  def build_dir, do: Application.fetch_env!(:gblex, :github_username) <> ".github.io"
 
   def render({entry_name, markdown}) when is_binary(markdown) do
     {entry_name, Earmark.as_html!(markdown)}
@@ -18,9 +17,9 @@ defmodule Gblex do
     |> File.write!(html)
   end
 
-  def build do
-    if !File.exists?(build_dir()) do
-      build_dir() |> File.mkdir!
+  def build(build_dir) do
+    if !File.exists?(build_dir) do
+      File.mkdir!(build_dir)
     end
 
     File.ls!(entries_dir())
