@@ -30,3 +30,4 @@ use Mix.Config
 #     import_config "#{Mix.env}.exs"
 
 config :gblex, github_username: "user"
+config :gblex, blog_title: "Foo's blog"
