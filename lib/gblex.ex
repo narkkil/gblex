@@ -38,6 +38,7 @@ defmodule Gblex do
     entries =
       File.ls!(entries_dir())
       |> Enum.filter_map(&is_md?/1, &Entry.read_entry/1)
+      |> Enum.sort(&(&1.date > &2.date))
 
     render_index(entries)
     render_entries(entries)
