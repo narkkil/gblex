@@ -8,7 +8,7 @@ Github Pages powered blogging engine focusing on:
 
 ## Getting started
 
-1. Ensure you have Elixir and Git and Git configured to work with Github
+1. Ensure you have Elixir, Git and Git configured to work with Github
 1. Create your Github Pages repository on Github
     - Important: Only add the bare repo if you wish to publish your blog
     via `mix gblex.publish`
