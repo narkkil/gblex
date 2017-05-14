@@ -27,4 +27,7 @@ use Mix.Config
 # Configuration from the imported file will override the ones defined
 # here (which is why it is important to import them last).
 #
-import_config "#{Mix.env}.exs"
+
+# Uncomment and configure these before starting with your blog!
+#config :gblex, github_username: "foo"
+#config :gblex, blog_title: "Foo's blog"
