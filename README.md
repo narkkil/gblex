@@ -9,11 +9,12 @@ Github Pages powered blogging engine focusing on:
 ## Getting started
 
 1. Ensure you have Elixir, Git and Git configured to work with Github
-1. Create your Github Pages repository on Github
+2. Create your Github Pages repository on Github
     - Important: Only add the bare repo if you wish to publish your blog
     via `mix gblex.publish`
-2. Clone this repository `git clone https://github.com/narck/gblex`
-3. Run the following commands inside your local clone:
+3. Clone this repository `git clone https://github.com/narck/gblex`
+4. Configure your blog title and Github username in `config/config.exs`
+5. Run the following commands inside your local clone:
 
 ```elixir
 mix deps.get
@@ -24,4 +25,7 @@ mix gblex.publish
 
 `entries/` contains a sample blog entry which you may wish to delete.
 
-You're done!
+By default `gblex` creates a Git repo subdirectory inside your clone which is Git
+ignored. You can either use the Mix tasks supplied or use the repo as usual.
+
+That's it!
