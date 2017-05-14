@@ -61,9 +61,18 @@ defmodule Gblex do
 
   def is_md?(filename), do: String.ends_with?(filename, ".md")
 
-  def initialize do
+  def initialize(username) do
+    Git.init!("#{username}.github.io")
+    |> Git.remote(~w(add origin https://github.com/#{username}/#{username}.github.io))
   end
 
-  def publish do
+  def publish(username, date) do
+    commit_args = ["-m", "#{date}"]
+    repo = Git.new("#{username}.github.io")
+
+    build(build_dir())
+    Git.add(repo, ".")
+    Git.commit(repo, commit_args)
+    Git.push(repo)
   end
 end
