@@ -1,1 +1,2 @@
-%{"earmark": {:hex, :earmark, "1.2.0", "bf1ce17aea43ab62f6943b97bd6e3dc032ce45d4f787504e3adf738e54b42f3a", [:mix], [], "hexpm"}}
+%{"earmark": {:hex, :earmark, "1.2.0", "bf1ce17aea43ab62f6943b97bd6e3dc032ce45d4f787504e3adf738e54b42f3a", [:mix], [], "hexpm"},
+  "git_cli": {:hex, :git_cli, "0.2.3", "052f0ecfc43d86fb4a750741540bdb00ac63354c6588024555be62c8ea1eff33", [:mix], [], "hexpm"}}
