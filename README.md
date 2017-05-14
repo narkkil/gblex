@@ -12,7 +12,7 @@ Github Pages powered blogging engine focusing on:
 1. Create your Github Pages repository on Github
     - Important: Only add the bare repo if you wish to publish your blog
     via `mix gblex.publish`
-2. Clone this repository
+2. Clone this repository `git clone https://github.com/narck/gblex`
 3. Run the following commands inside your local clone:
 
 ```elixir
